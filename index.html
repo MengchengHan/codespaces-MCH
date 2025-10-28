@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calc" role="application" aria-label="Calculadora">
+        <div class="brand">
+            <span>Calculadora</span>
+            <span style="font-size:12px">Soporta teclado</span>
+        </div>
+        <div class="screen" aria-live="polite" aria-atomic="true">
+            <div id="prev" class="prev" title="Operación anterior"></div>
+            <div id="curr" class="curr" title="Valor actual">0</div>
+        </div>
+        <div class="keys">
+            <button class="danger" data-action="clear" aria-label="Borrar todo">AC</button>
+            <button class="op" data-action="delete" aria-label="Borrar último dígito">DEL</button>
+            <button class="op" data-action="percent" aria-label="Porcentaje">%</button>
+            <button class="op" data-operator="÷" aria-label="Dividir">÷</button>
+
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button class="op" data-operator="×" aria-label="Multiplicar">×</button>
+
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button class="op" data-operator="-" aria-label="Restar">−</button>
+
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button class="op" data-operator="+" aria-label="Sumar">+</button>
+
+            <button data-action="plusminus" aria-label="Cambiar signo">±</button>
+            <button data-number="0">0</button>
+            <button data-number=".">.</button>
+            <button class="accent data-action="equals" aria-label="Resultado">=</button>
+        </div>
+        <div class="kbd-help">Teclado: 0-9 . + - * / % Enter = Backspace Esc</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
